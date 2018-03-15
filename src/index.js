@@ -620,7 +620,7 @@ export default class extends Component {
   }
 
   renderScrollView = pages => {
-    if (Platform.OS === 'ios') {
+    if (Platform.OS === 'ios' || Platform.OS === 'web') {
       return (
         <ScrollView ref={this.refScrollView}
           {...this.props}
